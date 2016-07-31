@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>HelloMavenMulti</artifactId>
+        <groupId>HelloMavenMulti</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>HelloMavenMultiEar</artifactId>
+    <packaging>ear</packaging>
+
+    <name>HelloMavenMultiEar</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <version>6</version>
+                    <modules>
+                        <webModule>
+                            <groupId>HelloMavenMulti</groupId>
+                            <artifactId>HelloMavenMultiWeb</artifactId>
+                            <bundleFileName>HelloMavenMultiWeb.war</bundleFileName>
+                            <contextRoot>/</contextRoot>
+                        </webModule>
+                        <ejbModule>
+                            <groupId>HelloMavenMulti</groupId>
+                            <artifactId>HelloMavenMultiEjb</artifactId>
+                            <bundleFileName>HelloMavenMultiEjb.jar</bundleFileName>
+                        </ejbModule>
+                    </modules>
+                    <displayName>My Ear Name displayed in the App Server</displayName>
+                    <generateApplicationXml>true</generateApplicationXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+
+        <dependency>
+            <groupId>HelloMavenMulti</groupId>
+            <artifactId>HelloMavenMultiEjb</artifactId>
+            <version>1.0</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>HelloMavenMulti</groupId>
+            <artifactId>HelloMavenMultiWeb</artifactId>
+            <version>1.0</version>
+            <type>war</type>
+        </dependency>
+    </dependencies>
+
+</project>

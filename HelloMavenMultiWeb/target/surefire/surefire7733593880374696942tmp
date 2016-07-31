@@ -1,0 +1,6 @@
+#surefire
+#Sun Jul 31 23:23:13 BDT 2016
+user.dir=/home/rakib/training/repo/HelloMavenMulti/HelloMavenMultiWeb
+idea.version=15.0.2
+localRepository=/home/rakib/.m2/repository
+basedir=/home/rakib/training/repo/HelloMavenMulti/HelloMavenMultiWeb
