@@ -3,3 +3,11 @@ HelloMavenMultiEar/target/*
 HelloMavenMultiEjb/target/*
 HelloMavenMultiWeb/target/*
 *.iml
+/HelloMavenMultiEar/target/
+/HelloMavenMultiEar/HelloMavenMultiEar.iml
+/.idea/
+/HelloMavenMultiEjb/target/
+/HelloMavenMultiEjb/HelloMavenMultiEjb.iml
+/HelloMavenMultiWeb/target/
+/HelloMavenMultiWeb/HelloMavenMultiWeb.iml
+/HelloMavenMulti.iml
