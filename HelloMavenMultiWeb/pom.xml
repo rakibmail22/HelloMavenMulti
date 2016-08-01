@@ -18,11 +18,7 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
-            <groupId>HelloMavenMulti</groupId>
-            <artifactId>HelloMavenMultiEjb</artifactId>
-            <version>1.0</version>
-        </dependency>
+
         <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
         <dependency>
             <groupId>javax</groupId>

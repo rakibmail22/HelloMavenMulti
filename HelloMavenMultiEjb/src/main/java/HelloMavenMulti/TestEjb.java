@@ -8,9 +8,8 @@ import javax.ejb.TransactionAttributeType;
  * Created by rakib on 7/31/16.
  */
 @Stateless
-@TransactionAttribute(TransactionAttributeType.NEVER)
 public class TestEjb implements TestEjbInterface {
     public String testMethod() {
-        return "Test EJB";
+        return "Test EJB ABC";
     }
 }
